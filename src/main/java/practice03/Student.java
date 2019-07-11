@@ -1,21 +1,11 @@
 package practice03;
 
-package practice02;
-
-public class Student extends Person{
-    private int klass;
-
-    public Student(String name, int age, int kclass) {
+public class Worker extends Person{
+    public Worker(String name, int age) {
         super(name, age);
-        this.kclass = kclass;
     }
-
     @Override
-    public String introduce() {
-        return "I am a Student. I am at Class "+this.kclass+".";
-    }
-
-    public int getKlass() {
-        return kclass;
+    public String introduce(){
+        return "I am a Worker. I have a job.";
     }
 }
