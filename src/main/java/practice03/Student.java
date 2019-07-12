@@ -1,11 +1,19 @@
 package practice03;
 
-public class Worker extends Person{
-    public Worker(String name, int age) {
+public class Student extends Person{
+
+    private int klass;
+
+    public Student(String name, int age, int klass) {
         super(name, age);
+        this.klass = klass;
     }
-    @Override
+
     public String introduce(){
-        return "I am a Worker. I have a job.";
+        return "I am a Student. I am at Class "+klass+".";
+    }
+
+    public int getKlass() {
+        return klass;
     }
 }
